@@ -1,80 +1,104 @@
-
 # E-Commerce Catalogue and Traffic Analysis
 
-## Project Overview
+This repository contains five Java programs that apply data structures and algorithmic patterns to e-commerce scenarios.
 
-This project implements five Java programs based on real-world e-commerce business scenarios. Each task uses a different Data Structure or Algorithm to solve a specific problem related to product management, SKU lookup, microservice deployment, website traffic analysis, and gift card pair finding.
-
-## Technologies Used
-
-- Programming Language: Java
-- Concepts: Data Structures and Algorithms
-- IDE: Visual Studio Code
-- Version Control: Git and GitHub
-
-## Project Structure
+## Project structure
 
 ```text
-ECommerceCatalogue/
-│
-├── ProductCategoryManagement/
-│   └── BinarySearchTree.java
-│
-├── SKULookupComparison/
-│   └── HashTable.java
-│
-├── MicroserviceDeployment/
-│   └── Graph.java
-│
-├── PeakTrafficAnalysis/
-│   └── SlidingWindow.java
-│
-├── GiftCardPairFinding/
-│   └── TwoPointers.java
-│
-└── README.md
+Assignment2/
+├── README.md
+└── ECommerceCatalogue/
+    ├── DecisionTable.png.png
+    ├── output1.png
+    ├── output2.png
+    ├── output3.png
+    ├── output4.png
+    ├── output5.png
+    ├── GiftCardPairFinding/
+    │   └── TwoPointers.java
+    ├── MicroserviceDeployment/
+    │   └── Graph.java
+    ├── PeakTrafficAnalysis/
+    │   └── SlidingWindow.java
+    ├── ProductCategoryManagement/
+    │   └── BinarySearchTree.java
+    └── SKULookupComparison/
+        └── HashTable.java
 ```
 
+## Decision table
 
+The accompanying decision table graphic is available at [DecisionTable.png.png](ECommerceCatalogue/DecisionTable.png.png).
 
+## Source code and execution
 
-## Decision Table
+The commands below are for PowerShell run from the repository root. They compile each source file into an `out` directory and run its fully qualified Java class. A JDK with `javac` and `java` on `PATH` is required.
 
-| S.No | Problem                      | Data Structure                    Reason                       
-|------|------------------------------|-----------------------------------|----------------------------
-| 1    | Product Category Management  | Binary Search Tree (BST)          | Efficient Traversal  
+### Product Category Management
 
-| 2    | SKU Lookup Comparison        | Hash Table and HashMap            | Fast SKU lookup      
+Source: [BinarySearchTree.java](ECommerceCatalogue/ProductCategoryManagement/BinarySearchTree.java)
 
-| 3    | Microservice Deployment      | Graph, BFS, DFS, Topological Sort | Manages dependencies
+```powershell
+javac -d out ECommerceCatalogue\ProductCategoryManagement\BinarySearchTree.java
+java -cp out ECommerceCatalogue.ProductCategoryManagement.BinarySearchTree
+```
 
-| 4    | Peak Traffic Analysis        | Sliding Window                    | Finds the busiest window
+### SKU Lookup Comparison
 
-| 5    | Gift Card Pair Finding       | Two Pointers                      | Finds target-sum pairs
+Source: [HashTable.java](ECommerceCatalogue/SKULookupComparison/HashTable.java)
 
+```powershell
+javac -d out ECommerceCatalogue\SKULookupComparison\HashTable.java
+java -cp out ECommerceCatalogue.SKULookupComparison.HashTable
+```
 
-## Deliverables
+### Microservice Deployment
 
-### 1. Source Code
-- BinarySearchTree.java
-- HashTable.java
-- Graph.java
-- SlidingWindow.java
-- TwoPointers.java
+Source: [Graph.java](ECommerceCatalogue/MicroserviceDeployment/Graph.java)
 
-### 2. Execution Output
+```powershell
+javac -d out ECommerceCatalogue\MicroserviceDeployment\Graph.java
+java -cp out ECommerceCatalogue.MicroserviceDeployment.Graph
+```
+
+### Peak Traffic Analysis
+
+Source: [SlidingWindow.java](ECommerceCatalogue/PeakTrafficAnalysis/SlidingWindow.java)
+
+```powershell
+javac -d out ECommerceCatalogue\PeakTrafficAnalysis\SlidingWindow.java
+java -cp out ECommerceCatalogue.PeakTrafficAnalysis.SlidingWindow
+```
+
+### Gift Card Pair Finding
+
+Source: [TwoPointers.java](ECommerceCatalogue/GiftCardPairFinding/TwoPointers.java)
+
+```powershell
+javac -d out ECommerceCatalogue\GiftCardPairFinding\TwoPointers.java
+java -cp out ECommerceCatalogue.GiftCardPairFinding.TwoPointers
+```
+
+## Execution output
+
+The screenshots below show the captured console output for each program. The hash-table benchmark timings vary by machine and run.
 
 ### 1. Product Category Management
-![Output 1](output1.png)
+
+![Product category management output](ECommerceCatalogue/output1.png)
 
 ### 2. SKU Lookup Comparison
-![Output 2](output2.png)
+
+![SKU lookup comparison output](ECommerceCatalogue/output2.png)
 
 ### 3. Microservice Deployment
-![Output 3](output3.png)
+
+![Microservice deployment output](ECommerceCatalogue/output3.png)
 
 ### 4. Peak Traffic Analysis
-![Output 4](output4.png)
+
+![Peak traffic analysis output](ECommerceCatalogue/output4.png)
 
 ### 5. Gift Card Pair Finding
-![Output 5](output5.png)
+
+![Gift card pair finding output](ECommerceCatalogue/output5.png)
