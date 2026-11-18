@@ -1,4 +1,5 @@
-Set 1  E-Commerce Catalogue and Traffic Analysis# E-Commerce Catalogue and Traffic Analysis
+Set 1  E-Commerce Catalogue and Traffic Analysis
+# E-Commerce Catalogue and Traffic Analysis
 
 This repository contains five Java programs that apply data structures and algorithmic patterns to e-commerce scenarios.
 
